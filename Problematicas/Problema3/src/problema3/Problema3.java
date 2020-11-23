@@ -44,13 +44,18 @@ public class Problema3 {
                     costoDia,
                     valorCancelar);
             //contador = contador +1;
-            System.out.print("Ingresar Si para seguir ingresando datos\n"
-                    + "Ingresar No para presentar el reporte final\n");
+            System.out.println("Ingresar Si para seguir ingresando datos\n"
+                    + "Ingresar No para presentar el reporte final");
             entrada.nextLine();
             opcion = entrada.nextLine();
         }
         
-        System.out.printf("%s\n", cadenaFinal);
+        if (opcion.equals("No")) {
+            System.out.printf("%s\n", cadenaFinal);
+        } else {
+            System.out.println("Datos incorrectos");
+        }
+        
                         
     }
     
