@@ -51,12 +51,12 @@ public class Problema3 {
         }
         
         if (opcion.equals("No")) {
-            System.out.printf("%s\n", cadenaFinal);
+            cadenaFinal = String.format("%s", cadenaFinal);
         } else {
-            System.out.println("Datos incorrectos");
+            cadenaFinal = String.format("Datos incorrectos\n");
         }
         
-                        
+        System.out.printf("%s\n", cadenaFinal);             
     }
     
 }
